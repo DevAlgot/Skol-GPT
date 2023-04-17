@@ -40,7 +40,7 @@ function App() {
     setChatLog(chatLogNew)
 
     const messages = chatLogNew.map((message) => message.content).join("\n")
-    const response = await fetch('https://skol-gpt.onrender.com/', {
+    const response = await fetch('https://skolgpt.onrender.com/', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"
